@@ -8,13 +8,15 @@
 4. If you win a fight you get 1 level.
 
 Symbol Key
-- 💥 1 damage
-- 🛡 blocks 1 damage
-- 🚫 ignores shields
-- ⚡ causes your action to happen faster then opponents (except shields)
-- 🎯 allows the attack to target specific conjurations or the player
-- 💀 summons a conjured creature
-- ❤ health points (HP)
-- 🔷 mana points (MP)
+- :boom: 1 damage
+- :shield: blocks 1 damage
+- :no_entry_sign: ignores shields
+- :zap: causes your action to happen faster then opponents (except shields)
+- :dart: allows the attack to target specific conjurations or the player
+- :skull: summons a conjured creature
+- :heart: health points (HP)
+- :large_blue_diamond: mana points (MP)
+- :rosette: status ability
+- :crossed_swords: action
 
-NOTE: unless 🎯, all attacks target enemy conjurations (💀) if any are present. If excess damage is dealt the left over hits the player.
+NOTE: unless :dart:, all attacks target enemy conjurations (:skull:) if any are present. If excess damage is dealt the left over hits the player.
