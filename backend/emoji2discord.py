@@ -8,7 +8,7 @@ _e2d = {
     '🚫': ':no_entry_sign:',
     '⚡': ':zap:',
     '🎯': ':dart:',
-    '💀': 'skull:',
+    '💀': ':skull:',
     '❤': ':heart:',
     '🔷': ':large_blue_diamond:',
     '🏵️': ':rosette:',
@@ -73,18 +73,19 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Convert emojis in a file.')
     parser.add_argument('infile', help='input file')
-    parser.add_argument('outfile', default=None, help='Output file')
-    parser.add_argument('-e2d', help='Convert emojis to discord (default)')
-    parser.add_argument('-d2e', help='Convert discord to emoji')
-    parser.add_argument('-md', help='Convert the discord icons not rendered by markdown')
+    parser.add_argument('outfile', default=None, help='Output file', nargs='?')
+    opt = dict(default=False, action="store_true")
+    parser.add_argument('-e2d', help='Convert emojis to discord (default)', **opt)
+    parser.add_argument('-d2e', help='Convert discord to emoji', **opt)
+    parser.add_argument('-md', help='Convert the discord icons not rendered by markdown', **opt)
 
     args = parser.parse_args()
-    if sum([args.e2d, args.d2e, args.md]) > 1:
+    if sum([1 for i in [args.e2d, args.d2e, args.md] if i]) > 1:
         raise RuntimeError('Cannot specify more than 1 conversion option.')
 
     if args.d2e:
-        print(e2d(args.infile, args.outfile))
+        print(d2e(args.infile, args.outfile))
     elif args.md:
-        print(e2d(args.infile, args.outfile))
+        print(md(args.infile, args.outfile))
     else:
         print(e2d(args.infile, args.outfile))
