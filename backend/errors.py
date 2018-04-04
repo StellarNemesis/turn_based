@@ -4,3 +4,11 @@ class TurnBasedError(Exception):
 
 class InvalidTargetError(TurnBasedError):
     pass
+
+
+class CastingError(TurnBasedError):
+    pass
+
+
+class DeathError(TurnBasedError):
+    pass

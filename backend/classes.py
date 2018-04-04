@@ -1,3 +1,6 @@
+from .errors import *
 from . import abilities
 from . import entities
-from .errors import *
+
+class Class:
+    pass
