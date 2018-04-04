@@ -1,5 +1,5 @@
 # Sorcerer
-HP :heart: : 5 <br>
+HP :heart: : 5<br>
 MP :large_blue_diamond: : 15
 
 ### Actions :crossed_swords:
