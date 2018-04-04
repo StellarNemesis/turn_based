@@ -20,3 +20,11 @@ Symbol Key
 - :crossed_swords: action
 
 NOTE: unless :dart:, all attacks target enemy conjurations (:skull:) if any are present. If excess damage is dealt the left over hits the player.
+
+#### Classes:
+- [Bard](classes/bard.md)
+- [Druid](classes/druid.md)
+- [Fighter](classes/fighter.md)
+- [Rouge](classes/rouge.md)
+- [Sorcerer](classes/sorcerer.md)
+- [Warrior](classes/warrior.md)
